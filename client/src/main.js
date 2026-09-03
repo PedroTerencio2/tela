@@ -19,7 +19,7 @@ const params = new URLSearchParams(location.search);
 const inDiscord = params.has('frame_id');
 
 // Dentro da Activity todo tráfego precisa passar pelo proxy do Discord.
-const P = inDiscord ? '/.proxy' : 'https://server-production-1287.up.railway.app';
+const P = inDiscord ? '/.proxy' : '';
 
 // Um decoder e um canvas por transmissor, indexados pelo slot que o servidor
 // atribuiu. Os canvas vivem fora do DOM entre renderizações e são movidos para
